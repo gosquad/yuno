@@ -1,4 +1,4 @@
-# Squad Lab
+# Yuno (Squad Lab)
 
 Testing existing and new Squad components.
 Bootstrapped with [react-transform-boilerplate](https://github.com/gaearon/react-transform-boilerplate).
