@@ -14,3 +14,4 @@ npm install
 **NOTE:** Remember to start the local API server if you're testing
 in the local environment.
 
+![asdf](http://i.imgur.com/ZLkp8Ii.jpg)
