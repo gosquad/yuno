@@ -1,15 +1,13 @@
 import React from 'react'
 
 export default class Response extends React.Component {
-  
   render() {
-    console.log(this.props.response)
-    let prettyResponse = []
     return (
       <div>
-        <ul>
-          {prettyResponse} 
-        </ul>
+        <h2>Resulting Response</h2>
+        <pre>
+          { JSON.stringify(this.props.response, null , 2) } 
+        </pre>
       </div>
     )
   }

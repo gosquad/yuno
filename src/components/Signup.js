@@ -47,6 +47,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
+        <h1>Signup</h1>
         <form onSubmit={this.handleSignup}>
           First Name:
           <input type="text" name="firstName"/>

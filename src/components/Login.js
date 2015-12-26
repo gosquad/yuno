@@ -16,9 +16,15 @@ export default class Login extends React.Component {
     let password = event.target.password.value
     let params = { username, password }
     let callback = (err, res) => {
+      if (!err) {
+        window.localStorage.setItem('sessionToken', res.body.sessionToken)
+        window.localStorage.setItem('currentUser', JSON.stringify(res.body))
+      }
+
       this.setState({
         response: res.body
       })
+
     }
     api.login(params, callback)
   }
@@ -26,6 +32,8 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
+        <h1>Login</h1>
+        <em>NOTE: Logging does not automatically rerender the DOM</em>
         <form onSubmit={this.handleLogin.bind(this)}>
           Username:
           <input type="text" name="username"/>
